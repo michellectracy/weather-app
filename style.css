@@ -1,0 +1,46 @@
+body {
+  background: #9ddcdc;
+}
+button {
+  display: inline-block;
+  border: none;
+}
+h1 {
+  text-align: center;
+  font-size: 60px;
+  font-family: "Raleway", sans-serif;
+}
+h2 {
+  text-align: center;
+  font-size: 22px;
+  font-family: "Raleway", sans-serif;
+}
+.temperature {
+  text-align: center;
+  font-size: 40px;
+  line-height: 48px;
+  font-family: "Raleway", sans-serif;
+}
+.description {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Raleway", sans-serif;
+}
+.wind {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Raleway", sans-serif;
+}
+.humidity {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Raleway", sans-serif;
+}
+.col-2 {
+  background-color: #9ddcdc;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+}
+i {
+  color: #e67a7a;
+}
