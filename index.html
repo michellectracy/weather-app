@@ -13,7 +13,6 @@
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  </head>
     <script
       src="https://kit.fontawesome.com/8573c42686.js"
       crossorigin="anonymous"
@@ -26,110 +25,117 @@
     />
   </head>
   <body>
-      <div class="container">
-          <div class="weather-app">
-            <form class="search-form" id="search-form">
-              <div class="row">
-                <div class="col-9">
-                  <input
-                    type="search"
-                    placeholder="Type a city.."
-                    autofocus="on"
-                    autocomplete="off"
-                    id="city-input"
-                    class="form-control shadow-sm"
-                  />
-                </div>
-                <div class="col-3">
-                  <input
-                    id="search=form"
-                    type="submit"
-                    value="search"
-                    class="btn btn-light"
-                  />
-                <button
+    <div class="container">
+      <div class="weather-app">
+        <form class="search-form" id="search-form">
+          <div class="row">
+            <div class="col-9">
+              <input
+                type="search"
+                placeholder="Type a city.."
+                autofocus="on"
+                autocomplete="off"
+                id="city-input"
+                class="form-control shadow-sm"
+              />
+            </div>
+            <div class="col-3">
+              <input
+                id="search=form"
+                type="submit"
+                value="search"
+                class="btn btn-light"
+              />
+              <button
                 id="current-location-button"
-                type="button" 
-                class="btn btn-light">current location
+                type="button"
+                class="btn btn-light"
+              >
+                current location
               </button>
+            </div>
+
+            <h1 id="city">New York</h1>
+            <h2 id="date">September 26 at 9:29</h2>
+            <div class="temperature">68 degrees</div>
+            <div class="description">Cloudy</div>
+            <div class="wind">Wind 7mph</div>
+            <div class="humidity">Humidity 100%</div>
+            <div class="row">
+              <div class="col-2">
+                <div class="card">
+                  <div class="card-header">Monday</div>
+                  <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                      <i class="fa-regular fa-sun"></i>
+                      <p>Sunny</p>
+                      <footer>H: 81 L: 69</footer>
+                    </blockquote>
+                  </div>
+                </div>
               </div>
-            </form>
- 
-    <h1 id="city">New York</h1>
-    <h2 id="date">
-      September 26 at 9:29
-    </h2>
-    <div class="temperature">68 degrees</div>
-    <div class="description">Cloudy</div>
-    <div class="wind">Wind 7mph</div>
-    <div class="humidity">Humidity 100%</div>
-    <div class="row">
-      <div class="col-2">
-        <div class="card">
-          <div class="card-header">Monday</div>
-          <div class="card-body">
-            <blockquote class="blockquote mb-0">
-              <i class="fa-regular fa-sun"></i>
-              <p>Sunny</p>
-              <footer>H: 81 L: 69</footer>
-            </blockquote>
-          </div>
-        </div>
-      </div>
 
-      <div class="col-2">
-        <div class="card">
-          <div class="card-header">Tuesday</div>
-          <div class="card-body">
-            <blockquote class="blockquote mb-0">
-              <i class="fa-solid fa-cloud-bolt"></i>
-              <p>Thunderstorms</p>
-              <footer>H: 82 L: 68</footer>
-            </blockquote>
-          </div>
-        </div>
-      </div>
+              <div class="col-2">
+                <div class="card">
+                  <div class="card-header">Tuesday</div>
+                  <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                      <i class="fa-solid fa-cloud-bolt"></i>
+                      <p>Thunderstorms</p>
+                      <footer>H: 82 L: 68</footer>
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
 
-      <div class="col-2">
-        <div class="card">
-          <div class="card-header">Wednesday</div>
-          <div class="card-body">
-            <blockquote class="blockquote mb-0">
-              <i class="fa-regular fa-sun"></i>
-              <p>Sunny</p>
-              <footer>H: 82 L: 63</footer>
-            </blockquote>
-          </div>
-        </div>
-      </div>
+              <div class="col-2">
+                <div class="card">
+                  <div class="card-header">Wednesday</div>
+                  <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                      <i class="fa-regular fa-sun"></i>
+                      <p>Sunny</p>
+                      <footer>H: 82 L: 63</footer>
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
 
-      <div class="col-2">
-        <div class="card">
-          <div class="card-header">Thursday</div>
-          <div class="card-body">
-            <blockquote class="blockquote mb-0">
-              <i class="fa-regular fa-sun"></i>
-              <p>Sunny</p>
-              <footer>H: 77 L: 62</footer>
-            </blockquote>
-          </div>
-        </div>
-      </div>
+              <div class="col-2">
+                <div class="card">
+                  <div class="card-header">Thursday</div>
+                  <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                      <i class="fa-regular fa-sun"></i>
+                      <p>Sunny</p>
+                      <footer>H: 77 L: 62</footer>
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
 
-      <div class="col-2">
-        <div class="card">
-          <div class="card-header">Friday</div>
-          <div class="card-body">
-            <blockquote class="blockquote mb-0">
-              <i class="fa-regular fa-sun"></i>
-              <p>Sunny</p>
-              <footer>H: 75 L: 57</footer>
-            </blockquote>
+              <div class="col-2">
+                <div class="card">
+                  <div class="card-header">Friday</div>
+                  <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                      <i class="fa-regular fa-sun"></i>
+                      <p>Sunny</p>
+                      <footer>H: 75 L: 57</footer>
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p>
+              <a href="https://github.com/michellectracy/weather-app">
+                Open Source Code by Michelle Tracy
+              </a>
+            </p>
+            <script src="src/index.js"></script>
           </div>
-        </div>
+        </form>
       </div>
     </div>
-    <a href="https://github.com/michellectracy/weather-app"> Open Source Code by Michelle Tracy </a>
-    <script src="src/index.js"></script>
   </body>
 </html>
